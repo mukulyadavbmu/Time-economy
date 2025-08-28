@@ -4,7 +4,6 @@
 The app gamifies time management by rewarding tokens for productive tasks (e.g., studying) and deducting tokens for distractions (e.g., phone usage).  
 It also features a **loan system** and **credit score-like logic** to manage token limits responsibly.
 
-🚀 Hosted on **Firebase**: [Live App](https://)
 
 ---
 
