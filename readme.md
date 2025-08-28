@@ -30,4 +30,3 @@ It also features a **loan system** and **credit score-like logic** to manage tok
 1. Clone this repository:
    ```bash
    git clone https://github.com/mukulyadavbmu/time-economy.git
-   cd time-economy
