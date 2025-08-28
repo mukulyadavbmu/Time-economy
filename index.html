@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Token Habit Tracker</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="container">
+    <!-- Auth Section -->
+    <div id="auth" class="card">
+      <h2>Login / Register</h2>
+      <input type="email" id="email" placeholder="Enter Email" />
+      <input type="password" id="password" placeholder="Enter Password" />
+      <div class="btn-group">
+        <button onclick="login()">Login</button>
+        <button class="secondary" onclick="register()">Register</button>
+      </div>
+    </div>
+
+    <!-- App Section -->
+    <div id="app" class="card" style="display:none;">
+      <h2>👋 Welcome, <span id="user_display"></span>!</h2>
+
+      <!-- Dashboard -->
+      <div class="dashboard">
+        <div class="widget">
+          <h4>Tokens</h4>
+          <p id="tokens" class="token-count">0</p>
+        </div>
+        <div class="widget">
+          <h4>Credit Score</h4>
+          <p id="credit_score">1</p>
+        </div>
+        <div class="widget">
+          <h4>Loan</h4>
+          <p id="loan">0</p>
+        </div>
+      </div>
+
+      <!-- Activities -->
+      <h3>📌 Activities</h3>
+      <ul id="activities"></ul>
+      <div class="input-row">
+        <input type="text" id="activity_name" placeholder="Activity Name" />
+        <input type="number" id="activity_tokens" placeholder="Tokens (+/-)" />
+        <button onclick="addActivity()">Add</button>
+      </div>
+
+      <!-- Loan Management -->
+      <h3>💰 Loan Management</h3>
+      <div class="btn-group">
+        <button onclick="takeLoan()">Take Loan</button>
+        <button class="secondary" onclick="repayLoan()">Repay Loan</button>
+      </div>
+
+      <!-- Session -->
+      <h3>⚙️ Session</h3>
+      <div class="btn-group">
+        <button onclick="logout()">Logout</button>
+        <button class="secondary" onclick="weeklyInterest()">Apply Weekly Interest</button>
+      </div>
+
+      <!-- History -->
+      <h3>📜 History</h3>
+      <ul id="history" class="history"></ul>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+/* ==== Dark Aesthetic Theme ==== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #0f0f10;
+    color: #e4e4e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/* Container */
+#auth, #app {
+    background: #1a1a1d;
+    padding: 28px;
+    border-radius: 14px;
+    width: 380px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6), 
+                0 0 25px rgba(51, 102, 255, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+
+#auth:hover, #app:hover {
+    box-shadow: 0 0 25px rgba(51, 102, 255, 0.35),
+                0 0 50px rgba(51, 102, 255, 0.15);
+}
+
+
+h2, h3 {
+    color: #fafafa;
+    margin-bottom: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+#token_widget {
+    font-size: 20px;
+    font-weight: bold;
+    color: #58a6ff;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+
+#credit_score, #loan {
+    font-weight: bold;
+    color: #00c853;
+}
+
+
+/* Inputs & Buttons */
+input {
+    margin: 6px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #333;
+    border-radius: 6px;
+    background: #222;
+    color: #e4e4e7;
+    outline: none;
+    transition: border 0.2s;
+}
+
+
+input:focus {
+    border: 1px solid #58a6ff;
+    box-shadow: 0 0 6px rgba(88, 166, 255, 0.6);
+}
+
+
+button {
+    margin: 8px 0;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(135deg, #3366ff, #2541b2);
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(51, 102, 255, 0.4);
+}
+
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+
+ul li {
+    padding: 8px 12px;
+    margin: 6px 0;
+    background: #222;
+    border-radius: 6px;
+    border-left: 4px solid #3366ff;
+    transition: all 0.2s ease;
+}
+
+
+ul li:hover {
+    background: #2a2a2e;
+    transform: scale(1.02);
+}
+
+
+/* History Section */
+#history {
+    max-height: 150px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #3366ff #1a1a1d;
+}
+
+
+#history::-webkit-scrollbar {
+    width: 6px;
+}
+#history::-webkit-scrollbar-thumb {
+    background: #3366ff;
+    border-radius: 3px;
+}
