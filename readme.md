@@ -21,7 +21,7 @@ It also features a **loan system** and **credit score-like logic** to manage tok
 ## 🛠️ Tech Stack
 
 - **Frontend**: HTML, CSS, JavaScript  
-- **Backend / Auth (optional)**: Firebase   
+- **Backend / Auth : Firebase   
 
 ---
 
